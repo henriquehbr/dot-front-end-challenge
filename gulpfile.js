@@ -18,12 +18,14 @@ const css = done => {
 
 const commonGulpfile = packagePath => {
   const publicDir = packagePath + '/public'
-  const allFiles = packagePath + '/public/*.{html,css}'
+  const allFiles = packagePath + '/public/*.html'
+  const cssFiles = packagePath + '/src/*.css'
 
   browserSync.init({
     server: publicDir
   })
 
+  watch(cssFiles, css)
   watch(allFiles).on('change', browserSync.reload)
 }
 

@@ -1,0 +1,10 @@
+@keyframes levitate {
+  from,
+  to {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+}
