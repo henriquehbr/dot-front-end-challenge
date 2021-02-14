@@ -1,0 +1,30 @@
+header section.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 20px;
+}
+
+header section.dots-container .dot,
+header section.dots-container .active-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: white;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: width border 0.5s;
+}
+
+header section.dots-container .active-dot {
+  width: 40px;
+  height: 40px;
+  border-color: white;
+  border-width: 6px;
+  background-color: grey;
+}

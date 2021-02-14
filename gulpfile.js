@@ -4,13 +4,16 @@ import rimraf from 'rimraf'
 
 const { watch, src, dest, series } = gulp
 
-const cleanCss = done => {
+const cleanBuild = done => {
   rimraf.sync('./packages/front-vanilla/public/build')
   done()
 }
 
-const css = done => {
-  src('./packages/front-vanilla/src/*.css')
+const copyToDest = done => {
+  src('./packages/front-vanilla/css/*.css')
+    .pipe(dest('./packages/front-vanilla/public/build'))
+    .pipe(browserSync.stream())
+  src('./packages/front-vanilla/js/*.js')
     .pipe(dest('./packages/front-vanilla/public/build'))
     .pipe(browserSync.stream())
   done()
@@ -18,15 +21,21 @@ const css = done => {
 
 const commonGulpfile = packagePath => {
   const publicDir = packagePath + '/public'
-  const allFiles = packagePath + '/public/*.html'
-  const cssFiles = packagePath + '/src/*.css'
+  const htmlFiles = packagePath + '/public/*.html'
+  const jsFiles = packagePath + '/js/*.js'
+  const cssFiles = packagePath + '/css/*.css'
 
   browserSync.init({
     server: publicDir
   })
 
-  watch(cssFiles, css)
-  watch(allFiles).on('change', browserSync.reload)
+  watch(cssFiles, copyToDest)
+  watch(jsFiles, copyToDest)
+  watch(htmlFiles).on('change', browserSync.reload)
 }
 
-export const vanilla = series(cleanCss, css, commonGulpfile.bind(this, './packages/front-vanilla'))
+export const vanilla = series(
+  cleanBuild,
+  copyToDest,
+  commonGulpfile.bind(this, './packages/front-vanilla')
+)
