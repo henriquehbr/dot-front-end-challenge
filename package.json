@@ -2,5 +2,16 @@
   "name": "dot-front-end-challenge",
   "version": "0.0.0",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "generate": "node --no-warnings --experimental-specifier-resolution=node scripts/generate",
+    "release": "node --no-warnings --experimental-specifier-resolution=node scripts/release"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "conventional-commits-parser": "^3.2.0",
+    "execa": "^5.0.0",
+    "semver": "^7.3.4",
+    "write-pkg": "^4.0.0"
+  }
 }
