@@ -1,8 +1,6 @@
 {
-  "name": "dot-front-end-challenge",
-  "version": "0.0.0",
-  "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
-  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/*"],
   "type": "module",
   "scripts": {
     "generate": "node --no-warnings --experimental-specifier-resolution=node scripts/generate",
