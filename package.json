@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "generate": "node --no-warnings --experimental-specifier-resolution=node scripts/generate",
     "release": "node --no-warnings --experimental-specifier-resolution=node scripts/release"
