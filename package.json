@@ -9,10 +9,12 @@
     "release": "node --no-warnings --experimental-specifier-resolution=node scripts/release"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "chalk": "^4.1.0",
     "conventional-commits-parser": "^3.2.0",
     "execa": "^5.0.0",
     "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8",
     "semver": "^7.3.4",
     "write-pkg": "^4.0.0"
   }

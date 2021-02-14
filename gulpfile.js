@@ -1,5 +1,12 @@
-const defaultTask = cb => {
-  cb()
-}
+import gulp from 'gulp'
+import browserSync from 'browser-sync'
 
-export default defaultTask
+const { watch } = gulp
+
+export default () => {
+  browserSync.init({
+    server: './packages/front-vanilla'
+  })
+
+  watch('./packages/front-vanilla/*.html').on('change', browserSync.reload)
+}
