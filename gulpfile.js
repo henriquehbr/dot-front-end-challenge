@@ -4,13 +4,14 @@ import browserSync from 'browser-sync'
 const { watch } = gulp
 
 const commonGulpfile = packagePath => {
+  const publicDir = packagePath + '/public'
+  const allFiles = packagePath + '/public/*.{html,css}'
+
   browserSync.init({
-    server: packagePath
+    server: publicDir
   })
 
-  const htmlFiles = packagePath + '/*.html'
-
-  watch(htmlFiles).on('change', browserSync.reload)
+  watch(allFiles).on('change', browserSync.reload)
 }
 
 export const vanilla = commonGulpfile.bind(this, './packages/front-vanilla')
