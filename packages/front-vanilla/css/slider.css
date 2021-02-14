@@ -1,5 +1,5 @@
 section.slider-container {
-  background-color: grey;
+  background-color: #484848;
 }
 
 section.slider-container #slider {
@@ -22,7 +22,7 @@ section.slider-container #slider .slider-cell img {
 
 section.slider-container #slider .slider-cell h3 {
   margin-top: 9px;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
