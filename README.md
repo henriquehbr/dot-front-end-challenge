@@ -11,7 +11,21 @@
 
 ## Executando o projeto
 
-Para inicializar o servidor de desenvolvimento, execute o comando `gulp:front-vue` para inicializar o Frontend em Vue, caso contrário, execute `gulp:front-vanilla` para o Frontend sem framework (ambos os scripts estão presentes no package.json e devem ser chamados com `yarn` ao invés de `npm`):
+instale as dependências do projeto (de preferência, com `yarn` a fins de evitar conflitos com o `npm`)
+
+Yarn:
+
+```
+$ yarn
+```
+
+npm:
+
+```
+$ npm i
+```
+
+Após instaladas, teremos que inicializar o servidor de desenvolvimento, execute o comando `gulp:front-vue` para inicializar o Frontend em Vue, caso contrário, execute `gulp:front-vanilla` para o Frontend sem framework (ambos os scripts estão presentes no package.json e devem ser chamados com `yarn` ao invés de `npm`):
 
 ```
 # Frontend Vue
