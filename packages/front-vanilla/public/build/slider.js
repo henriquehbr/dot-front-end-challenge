@@ -14,7 +14,7 @@ export const slider = () => {
   const sliderElement = document.querySelector('#slider')
   const flkty = new Flickity(sliderElement, {
     pageDots: false,
-    cellAlign: 'center'
+    cellAlign: 'left'
   })
 
   window.onresize = () => sliderResponsivity(flkty)
