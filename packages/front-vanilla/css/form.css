@@ -1,12 +1,12 @@
 section.form-container {
   background-image: linear-gradient(160deg, #646464 50%, #323232 50%);
-  padding: 48px;
+  padding: 24px;
 }
 
 section.form-container form {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1280px;
+  max-width: calc(1280px - 48px);
   width: 100%;
   margin: 0 auto;
 }
@@ -62,4 +62,19 @@ section.form-container form button[type='submit'] {
   font-size: 16px;
   cursor: pointer;
   margin: 24px auto;
+}
+
+@media screen and (max-width: 768px) {
+  section.form-container form .input-wrapper:nth-child(2),
+  section.form-container form .input-wrapper:nth-child(3) {
+    width: 100%;
+  }
+
+  section.form-container form .input-wrapper:nth-child(2) {
+    margin: 20px 0 10px;
+  }
+
+  section.form-container form .input-wrapper:nth-child(3) {
+    margin: 10px 0 20px;
+  }
 }
