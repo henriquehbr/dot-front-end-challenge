@@ -33,6 +33,7 @@ header i {
   margin-top: 24px;
   animation: levitate 2s infinite;
   cursor: pointer;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
