@@ -15,6 +15,10 @@ section.slider-container #slider .slider-cell {
   color: white;
 }
 
+section.slider-container #slider .slider-cell.mobile {
+  width: 100%;
+}
+
 section.slider-container #slider .slider-cell img {
   width: 100%;
   border: 8px solid lightgrey;
