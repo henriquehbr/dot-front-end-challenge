@@ -1,6 +1,9 @@
 <script>
 module.exports = {
-  name: 'headline'
+  name: 'headline',
+  components: {
+    slider: httpVueLoader('./Slider.vue')
+  }
 }
 </script>
 
@@ -91,18 +94,21 @@ header section.dots-container .active-dot {
 </style>
 
 <template>
-  <header>
-    <div class="headline-content">
-      <h1>Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit ame, consectetur adipiscing elit</p>
-    </div>
-    <a href="#slider">
-      <i class="fas fa-arrow-down fa-3x"></i>
-    </a>
-    <section class="dots-container">
-      <div class="active-dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </section>
-  </header>
+  <div>
+    <header>
+      <div class="headline-content">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit ame, consectetur adipiscing elit</p>
+      </div>
+      <a href="#slider">
+        <i class="fas fa-arrow-down fa-3x"></i>
+      </a>
+      <section class="dots-container">
+        <div class="active-dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </section>
+    </header>
+    <slider />
+  </div>
 </template>
