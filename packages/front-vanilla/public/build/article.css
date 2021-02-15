@@ -35,3 +35,19 @@ article.article-container .article-content .article-text h1 {
 article.article-container .article-content .article-text p {
   font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  article.article-container .article-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  article.article-container .article-content .round-image {
+    width: 100%;
+    margin: 0 0 32px;
+  }
+
+  article.article-container .article-content .article-text {
+    width: 100%;
+  }
+}
