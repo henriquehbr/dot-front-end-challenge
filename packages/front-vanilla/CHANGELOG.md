@@ -1,5 +1,19 @@
 # front-vanilla changelog
 
+## v0.3.0
+
+_2021-02-15_
+
+### Features
+
+- feat: add smooth scroll on header arrow button (e7e604e)
+- feat: add mask to phone number field (8e481b2)
+
+### Updates
+
+- chore: set slider `cellAlign` to left (41f980c)
+- chore: correct title tag content (fe51936)
+
 ## v0.2.0
 
 _2021-02-15_
