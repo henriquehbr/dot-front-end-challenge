@@ -35,7 +35,7 @@ header i {
   cursor: pointer;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
   header .headline-content {
     background-color: #323232;
   }
