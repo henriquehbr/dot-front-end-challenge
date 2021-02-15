@@ -7,6 +7,7 @@
   "scripts": {
     "generate": "node --no-warnings --experimental-specifier-resolution=node scripts/generate",
     "release": "node --no-warnings --experimental-specifier-resolution=node scripts/release",
+    "gulp:front-vanilla": "yarn --cwd packages/front-vanilla gulp vanilla",
     "gulp:front-vue": "yarn --cwd packages/front-vue gulp"
   },
   "devDependencies": {
