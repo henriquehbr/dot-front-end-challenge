@@ -23,8 +23,9 @@ export const accordions = () => {
   const accordionHeaders = $$('.accordion-header')
   accordionHeaders.forEach(accordionHeader => {
     accordionHeader.addEventListener('click', ({ target }) => {
+      const accordionHeader = target.closest('.accordion-header')
       closeAllAccordions(accordionHeaders)
-      toggleAccordion(target)
+      toggleAccordion(accordionHeader)
     })
   })
 }
