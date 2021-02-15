@@ -9,6 +9,18 @@
 - 🥤 Gulp → fazer uso de Gulp como o task runner (automatizador de tarefas) do projeto
 - 📱 Responsividade → a aplicação pode ser usada em um dispositivos móveis
 
+## Executando o projeto
+
+Para inicializar o servidor de desenvolvimento, execute o comando `gulp:front-vue` para inicializar o Frontend em Vue, caso contrário, execute `gulp:front-vanilla` para o Frontend sem framework (ambos os scripts estão presentes no package.json e devem ser chamados com `yarn` ao invés de `npm`):
+
+```
+# Frontend Vue
+$ yarn gulp:front-vue
+
+# Frontend sem framework
+$ yarn gulp:front-vanilla
+```
+
 ## Layout
 
 ### Desktop
