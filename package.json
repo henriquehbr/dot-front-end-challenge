@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "generate": "node --no-warnings --experimental-specifier-resolution=node scripts/generate",
-    "release": "node --no-warnings --experimental-specifier-resolution=node scripts/release"
+    "release": "node --no-warnings --experimental-specifier-resolution=node scripts/release",
+    "gulp:front-vue": "yarn --cwd packages/front-vue gulp"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.8",
