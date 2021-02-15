@@ -8,9 +8,18 @@
   <title>DOT Challenge</title>
 </head>
 <body>
-  <main>
+  <main id='app'>
     <hello></hello>
   </main>
-  <script type='module' src='index.js'></script>
+  <script src='https://unpkg.com/vue'></script>
+  <script src='https://unpkg.com/http-vue-loader'></script>
+  <script>
+    new Vue({
+      el: '#app',
+      components: {
+        hello: httpVueLoader('App.vue')
+      }
+    })
+  </script>
 </body>
 </html>
