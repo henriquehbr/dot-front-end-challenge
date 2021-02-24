@@ -1,6 +1,6 @@
 # dot-front-end-challenge
 
-> Desafio técnico para desenvolvedor Front-End na Upnid
+> Desafio técnico para desenvolvedor Front-End na DOT
 
 ## Requisitos
 
